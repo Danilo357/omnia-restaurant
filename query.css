@@ -115,8 +115,7 @@
     padding: 4px;
     font-size: 120%;
   }
-
-  /* .city-feature {
+  */ .city-feature {
     font-size: 90%;
   }
   .plan-box {
@@ -128,7 +127,7 @@
   }
   .contact-form {
     width: 80%;
-  } */
+  }
 }
 
 /* Small phones from 0 to 480px */

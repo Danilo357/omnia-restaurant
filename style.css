@@ -187,13 +187,6 @@ input[type="submit"]:active {
   margin-bottom: 20px;
 }
 
-/* .ic {
-  height: 50px;
-  width: 50px;
-  color: #e67e22;
-  display: block;
-  margin-bottom: 10px;
-} */
 section {
   padding: 80px 0;
 }
@@ -229,9 +222,6 @@ section {
 .meal-photo img:hover {
   transform: scale(1.04);
   opacity: 1;
-}
-
-.step-box {
 }
 .step-box:first-child {
   text-align: right;
@@ -343,164 +333,4 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
-}
-/*--------------------------------------------------------------------*/
-/*-------- sign up -------*/
-/*--------------------------------------------------------------------*/
-
-.section-plans {
-  background-color: #e8e8e8;
-}
-.plan-box {
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 2px 2px rgb(49, 47, 47);
-}
-
-.plan-box div {
-  padding: 15px;
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.plan-box div:last-child {
-  text-align: center;
-  border: none;
-}
-
-.plan-box div:first-child {
-  background-color: #fcfcfc;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.plan-price {
-  font-size: 300%;
-  margin-bottom: 10px;
-  font-weight: 100%;
-  color: #e67e22;
-}
-
-.plan-price-meal {
-  font-size: 80%;
-}
-
-.plan-price span {
-  font-size: 30%;
-  font-weight: 300;
-}
-.plan-box ul {
-  list-style: none;
-}
-
-.plan-box ul li {
-  padding: 5px;
-}
-
-/*--------------------------------------------------------------------*/
-/*--------Form -------*/
-/*--------------------------------------------------------------------*/
-
-.contact-form {
-  width: 60%;
-  margin: 0 auto;
-}
-
-input[type="text"],
-input[type="email"] select,
-textarea {
-  width: 100%;
-  padding: 7px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-textarea {
-  height: 100px;
-}
-
-input[type="checkbox"] {
-  margin: 10px 5px 10px 0;
-}
-
-*:focus {
-  outline: none;
-}
-
-/*--------------------------------------------------------------------*/
-/*--------Footer -------*/
-/*--------------------------------------------------------------------*/
-
-footer {
-  background-color: #333;
-  padding: 40px;
-  font-size: 80%;
-}
-
-.footer-nav {
-  list-style: none;
-  float: left;
-}
-
-.social-links {
-  list-style: none;
-  float: right;
-}
-.footer-nav li,
-.social-links li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer-nav li:last-child,
-.social-links li:last-child {
-  margin-right: 0;
-}
-
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.social-links li a:link,
-.social-links li a:visited {
-  text-decoration: none;
-  border: 0;
-  color: #888;
-  transition: color 0.2s;
-}
-
-.footer-nav li a:hover,
-.footer-nav li a:active {
-  color: #ddd;
-}
-footer p {
-  color: #888;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 90%;
-}
-
-.social-links li a:link,
-.social-links li a:visited {
-  font-size: 180%;
-}
-
-.fa-facebook-square,
-.fa-facebook-square,
-.fa-facebook-square,
-.fa-facebook-square {
-  transition: color 0.2s;
-}
-
-.fa-facebook-square:hover {
-  color: #3b5998;
-}
-
-.fa-twitter-square:hover {
-  color: #00aced;
-}
-
-.fa-instagram:hover {
-  color: #dd4b39;
-}
-
-.fa-google-plus-square:hover {
-  color: #517fa4;
 }
