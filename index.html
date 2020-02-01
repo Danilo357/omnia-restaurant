@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <script src="main.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="grid.css" />
     <link rel="stylesheet" href="footer.css" />
@@ -21,6 +22,7 @@
       <nav>
         <div class="row">
           <img src="img/logo-white.png" alt="Omnifood logo" class="logo" />
+          <img src="img/logo.png" alt="Omnifood logo" class="logo-black" />
           <ul class="main-nav">
             <li><a href="#">Food delivery</a></li>
             <li><a href="#">How it works</a></li>
@@ -38,7 +40,7 @@
         <a class="btn btn-ghost" href="#">Show me more</a>
       </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features">
       <div class="row">
         <h2>
           Get food fast &mdash; not fast food.
@@ -417,6 +419,7 @@
             </div>
             <div class="col span-2-of-3">
               <input
+                class="email-input"
                 type="email"
                 name="email"
                 id="email"
@@ -431,7 +434,7 @@
               <label for="find-us">How did you find us?</label>
             </div>
             <div class="col span-2-of-3">
-              <select name="find-us" id="find-us">
+              <select class="select-options" name="find-us" id="find-us">
                 <option value="friends" selected>Friends</option>
                 <option value="search">Search engine</option>
                 <option value="ad">Advertisement</option>
@@ -504,5 +507,23 @@
         </p>
       </div>
     </footer>
+    <!-- skinuto od net za vrste browsera tj godine starosti. JSDelivr sajt pa kucas:respond,pa html5shiv,pa selectivizr. -->
+    <!-- <script async src="cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+
+    <script
+      async
+      src="cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"
+    ></script>
+    <script
+      async
+      src="cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"
+    ></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

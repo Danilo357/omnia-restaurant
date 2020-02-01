@@ -55,6 +55,12 @@
   .contact-form {
     width: 80%;
   }
+  .email-input {
+    border: 1px solid rgb(226, 220, 220);
+  }
+  .select-options {
+    border: 1px solid rgb(226, 220, 220);
+  }
 }
 
 /* Small phones to small tablets from 481px to 767px */
@@ -115,22 +121,27 @@
     padding: 4px;
     font-size: 120%;
   }
-  */ .city-feature {
-    font-size: 90%;
+  .email-input {
+    border: 1px solid rgb(226, 220, 220);
   }
-  .plan-box {
-    width: 100%;
-    margin-left: 0%;
-  }
-  .plan-price {
-    font-size: 250%;
-  }
-  .contact-form {
-    width: 80%;
+  .select-options {
+    border: 1px solid rgb(226, 220, 220);
   }
 }
 
 /* Small phones from 0 to 480px */
 
 @media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+  .email-input {
+    border: 1px solid rgb(226, 220, 220);
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .select-options {
+    border: 1px solid rgb(226, 220, 220);
+  }
 }
