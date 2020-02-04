@@ -78,7 +78,8 @@ header {
   width: 100%;
   background-color: rgb(255, 255, 255, 0.98);
   box-shadow: 0 2px 2px #efefef;
-  /* z-index: 9999; ovo predstavlja da scroll nav prekrije slike meals section. unkoment da vidis razliku */
+  z-index: 9999;
+  /* z-index: 9999 ovo predstavlja da scroll nav prekrije slike meals section. unkoment da vidis razliku  */
 }
 .stick-nav .logo {
   display: none;
@@ -370,4 +371,31 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/* ********* animations ***********/
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3 {
+  opacity: 0;
+}
+.js-wp-4 {
+  /* animation-duration: 1; */
+}
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated {
+  opacity: 1;
+}
+/* ************* Mobile-navi ************/
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
 }

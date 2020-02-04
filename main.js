@@ -64,10 +64,65 @@ $(document).ready(function() {
       1000
     );
   });
+  // ************ animation on scroll ****************
+  $(".js--wp-1").waypoint(
+    function() {
+      $(".js--wp-1").addClass("animated fadeInDown");
+    },
+    {
+      offset: "40%"
+    }
+  );
+
+  $(".js--wp-2").waypoint(
+    function() {
+      $(".js--wp-2").addClass("animated zoomInUp");
+    },
+    {
+      offset: "40%"
+    }
+  );
+
+  $(".js--wp-3").waypoint(
+    function() {
+      $(".js--wp-3").addClass("animated fadeInDown");
+    },
+    {
+      offset: "40%"
+    }
+  );
+
+  $(".js--wp-4").waypoint(
+    function() {
+      $(".js--wp-4").addClass("animated rubberBand ");
+    },
+    {
+      offset: "40%"
+    }
+  );
+  //************** Mobile-nav ***************
+
+  $(".js--nav-icon").click(function() {
+    var nav = $(".js--main-nav");
+    var icon = $(".js--nav-icon i");
+
+    nav.slideToggle(230); // 230 je vreme otvaranja i zatvaranja 230ms
+
+    if (icon.hasClass("fas fa-bars")) {
+      icon.addClass("far fa-times-circle");
+      icon.removeClass("fas fa-bars");
+    } else {
+      icon.addClass("fas fa-bars");
+      icon.removeClass("far fa-times-circle");
+    }
+  });
 });
 
-// **********  ovo je snippet za scroll za jquery   ************
+// ************ ovo je plain JavaScript i radi lepo isto konektovano sa css **********
+// const element = document.querySelector(".js--wp-1");
+// element.classList.add("animated", "bounceOutLeft");
 
+// **********  ovo je snippet za scroll za jquery   ************
 // var waypoints = $("#handler-first").waypoint(
 //   function(direction) {
 //     notify(this.element.id + " hit 25% from top of window");
@@ -78,7 +133,6 @@ $(document).ready(function() {
 // );
 
 // ******** ovo je snipet za smooth scroll jquery pa ti manjaj sta treba **********
-
 // $("a[href*=#]:not([href=#])").click(function() {
 //   if (
 //     location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") ||
