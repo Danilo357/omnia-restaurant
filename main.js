@@ -18,7 +18,7 @@ $(document).ready(function() {
     $("html,body").animate(
       { scrollTop: $(".js--section-plans").offset().top },
       1000
-      // 1000 znaci brzina scrollovanja. 1000 miliseconds je 1 sec
+      // 1000 znaci brzina scrollovanja.
     );
   });
 
@@ -29,31 +29,7 @@ $(document).ready(function() {
     );
   });
 
-  //  ********* Navigation scroll ************ radi i ovaj samo brzina ne radi, uvek je prebrzo. unkoment da vidis
-  // $(function() {
-  //   $("a[href*=#]:not([href=#])").click(function() {
-  //     if (
-  //       location.pathname.replace(/^\//, "") ==
-  //         this.pathname.replace(/^\//, "") &&
-  //       location.hostname == this.hostname
-  //     ) {
-  //       var target = $(this.hash);
-  //       target = target.length
-  //         ? target
-  //         : $("[name=" + this.hash.slice(1) + "]");
-  //       if (target.length) {
-  //         $("html,body").animate(
-  //           {
-  //             scrollTop: target.offset().top
-  //           },
-  //           1000
-  //         );
-  //         return false;
-  //       }
-  //     }
-  //   });
-  // });
-  //  ********* Navigation scroll pure CSS snippet ************ ovaj je pure css radi super sve
+  //  ********* Navigation scroll ************
   $(document).on("click", 'a[href^="#"]', function(event) {
     event.preventDefault();
 
@@ -117,37 +93,3 @@ $(document).ready(function() {
     }
   });
 });
-
-// ************ ovo je plain JavaScript i radi lepo isto konektovano sa css **********
-// const element = document.querySelector(".js--wp-1");
-// element.classList.add("animated", "bounceOutLeft");
-
-// **********  ovo je snippet za scroll za jquery   ************
-// var waypoints = $("#handler-first").waypoint(
-//   function(direction) {
-//     notify(this.element.id + " hit 25% from top of window");
-//   },
-//   {
-//     offset: "25%" a ovo je za kolko daljine da se ukljuci od tog taga, mozes videti na primeru uzmedju backgroud sliku i sledecu section, menjaj px da vidis razliku u pojavljivanju scroll nava
-//   }
-// );
-
-// ******** ovo je snipet za smooth scroll jquery pa ti manjaj sta treba **********
-// $("a[href*=#]:not([href=#])").click(function() {
-//   if (
-//     location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") ||
-//     location.hostname == this.hostname
-//   ) {
-//     var target = $(this.hash);
-//     target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-//     if (target.length) {
-//       $("html,body").animate(
-//         {
-//           scrollTop: target.offset().top
-//         },
-//         1000
-//       );
-//       return false;
-//     }
-//   }
-// });

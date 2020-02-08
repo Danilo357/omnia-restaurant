@@ -31,11 +31,6 @@ body {
 
 /******************  header  *******************************/
 
-/* postavljanje slike:vazno */
-/* 100vh da bude uvek visina bilo kojeg prozora */
-/* background-size: cover; da pokrije sve lepo u prozoru
-background-position: center; da slika nadje njenu sredinu */
-/* linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), da zatamni sliku. Prve 3 nule je normalan rgb a 0,5 je zatamljivanje */
 header {
   background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)),
     url(img/hero.jpg);
@@ -79,7 +74,6 @@ header {
   background-color: rgb(255, 255, 255, 0.98);
   box-shadow: 0 2px 2px #efefef;
   z-index: 9999;
-  /* z-index: 9999 ovo predstavlja da scroll nav prekrije slike meals section. unkoment da vidis razliku  */
 }
 .stick-nav .logo {
   display: none;
